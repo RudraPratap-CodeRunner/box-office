@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
 const SearchForm = ({ onSearch }) => {
   const [searchStr, setsearchstr] = useState("");
   const [searchOption,setSearchOption] = useState("shows");
+
+  useEffect(()=>{
+    console.log('Components mount');
+  },[]);
   
 
   const onSearchInputChange = (ev) => {
