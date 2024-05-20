@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 const ShowCard = ({ name,image, id, summary }) => {
 
@@ -15,7 +15,7 @@ const summaryStripped = summary?summary.split(" ").slice(0,10).join(' ').replace
       <p>{summaryStripped}</p>
 
       <div>
-        <Link to={`/show/${id}`}>Read more</Link>
+        <a href={`/show/${id}`} target="_blank" rel="noreferrer" >Read more</a>
         <button type="button">Star me</button>
       </div>
     </div>
