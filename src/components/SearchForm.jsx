@@ -5,9 +5,7 @@ const SearchForm = ({ onSearch }) => {
   const [searchStr, setsearchstr] = useState("");
   const [searchOption,setSearchOption] = useState("shows");
 
-  useEffect(()=>{
-    console.log('Components mount');
-  },[]);
+ 
   
 
   const onSearchInputChange = (ev) => {
